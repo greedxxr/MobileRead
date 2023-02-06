@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/editText_sousuo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:background="#EDEDED"
+            android:inputType="text"
+            android:hint="请输入书名" />
+        <Button
+            android:id="@+id/button_sousuo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="搜索" />
+    </LinearLayout>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#BBFFFF"
+        android:orientation="horizontal"
+        android:id="@+id/RadioGroup_fenglei"
+        >
+        <RadioButton
+            android:id="@+id/radioButton_shouye"
+            android:layout_width="0dp"
+            android:textAlignment="center"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="首页"
+            android:button="@null"/>
+
+        <RadioButton
+            android:id="@+id/radioButton_xuanhuan"
+            android:layout_width="0dp"
+            android:textAlignment="center"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="玄幻"
+            android:button="@null"/>
+
+        <RadioButton
+            android:id="@+id/radioButton_xiuzhen"
+            android:layout_width="0dp"
+            android:textAlignment="center"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="修真"
+            android:button="@null"
+            />
+
+        <RadioButton
+            android:id="@+id/radioButton_dushi"
+            android:layout_width="0dp"
+            android:textAlignment="center"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="都市"
+            android:button="@null"
+            />
+
+        <RadioButton
+            android:id="@+id/radioButton_lishi"
+            android:layout_width="0dp"
+            android:textAlignment="center"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="历史"
+            android:button="@null"
+            />
+
+        <RadioButton
+            android:id="@+id/radioButton_wangyou"
+            android:layout_width="0dp"
+            android:textAlignment="center"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="网游"
+            android:button="@null"
+            />
+
+        <RadioButton
+            android:id="@+id/radioButton_kehuan"
+            android:layout_width="0dp"
+            android:textAlignment="center"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="科幻"
+            android:button="@null"
+            />
+        <RadioButton
+            android:id="@+id/radioButton_yanqing"
+            android:layout_width="0dp"
+            android:textAlignment="center"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="言情"
+            android:button="@null"
+            />
+    </RadioGroup>
+    <androidx.recyclerview.widget.RecyclerView
+        android:background="#FFEFD5"
+        android:id="@+id/shucheng_recycleview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </androidx.recyclerview.widget.RecyclerView>
+</LinearLayout>

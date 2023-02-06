@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:id="@+id/radiogroup"
+        >
+        <RadioButton
+            android:id="@+id/radioButton_shujia"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableBottom="@drawable/shujia_select"
+            android:button="@null" />
+
+        <RadioButton
+            android:id="@+id/radioButton_shucheng"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableBottom="@drawable/shucheng_select"
+            android:button="@null" />
+
+        <RadioButton
+            android:id="@+id/radioButton_wode"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableBottom="@drawable/wode_select"
+            android:button="@null" />
+    </RadioGroup>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/view_page"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/radiogroup" />
+</RelativeLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/ProgramFiles/androidfile/MobileRead/app/src/main/res/drawable/flbutton.xml" value="0.1" />
+        <entry key="..\:/ProgramFiles/androidfile/MobileRead/app/src/main/res/drawable/shucheng_select.xml" value="0.1648148148148148" />
+        <entry key="..\:/ProgramFiles/androidfile/MobileRead/app/src/main/res/drawable/shujia_select.xml" value="0.1648148148148148" />
+        <entry key="..\:/ProgramFiles/androidfile/MobileRead/app/src/main/res/drawable/wode_select.xml" value="0.1648148148148148" />
+        <entry key="..\:/ProgramFiles/androidfile/MobileRead/app/src/main/res/layout/activity_book.xml" value="0.2" />
+        <entry key="..\:/ProgramFiles/androidfile/MobileRead/app/src/main/res/layout/activity_login.xml" value="0.264" />
+        <entry key="..\:/ProgramFiles/androidfile/MobileRead/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/ProgramFiles/androidfile/MobileRead/app/src/main/res/layout/activity_read.xml" value="0.264" />
+        <entry key="..\:/ProgramFiles/androidfile/MobileRead/app/src/main/res/layout/activity_register.xml" value="0.264" />
+        <entry key="..\:/ProgramFiles/androidfile/MobileRead/app/src/main/res/layout/book_item.xml" value="0.2" />
+        <entry key="..\:/ProgramFiles/androidfile/MobileRead/app/src/main/res/layout/charpter_item.xml" value="0.2" />
+        <entry key="..\:/ProgramFiles/androidfile/MobileRead/app/src/main/res/layout/fragment_shucheng.xml" value="0.264" />
+        <entry key="..\:/ProgramFiles/androidfile/MobileRead/app/src/main/res/layout/fragment_shujia.xml" value="0.2" />
+        <entry key="..\:/ProgramFiles/androidfile/MobileRead/app/src/main/res/layout/fragment_wode.xml" value="0.4" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
