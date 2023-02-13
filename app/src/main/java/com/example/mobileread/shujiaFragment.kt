@@ -21,10 +21,6 @@ class shujiaFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_shujia, container, false)
     }
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-        sxym()
-    }
 
     override fun onResume() {
         super.onResume()

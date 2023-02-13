@@ -11,21 +11,23 @@
             android:id="@+id/editText_sousuo"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/ed_sharp"
             android:layout_weight="3"
-            android:background="#EDEDED"
             android:inputType="text"
             android:hint="请输入书名" />
-        <Button
+        <ImageButton
             android:id="@+id/button_sousuo"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#FFFFFF"
             android:layout_weight="1"
-            android:text="搜索" />
+            android:src="@drawable/sousuo" />
     </LinearLayout>
     <RadioGroup
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:background="#BBFFFF"
         android:orientation="horizontal"
         android:id="@+id/RadioGroup_fenglei"
         >
@@ -33,6 +35,7 @@
             android:id="@+id/radioButton_shouye"
             android:layout_width="0dp"
             android:textAlignment="center"
+            android:background="@drawable/radiobutton_style"
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:text="首页"
@@ -42,6 +45,7 @@
             android:id="@+id/radioButton_xuanhuan"
             android:layout_width="0dp"
             android:textAlignment="center"
+            android:background="@drawable/radiobutton_style"
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:text="玄幻"
@@ -51,6 +55,7 @@
             android:id="@+id/radioButton_xiuzhen"
             android:layout_width="0dp"
             android:textAlignment="center"
+            android:background="@drawable/radiobutton_style"
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:text="修真"
@@ -61,6 +66,7 @@
             android:id="@+id/radioButton_dushi"
             android:layout_width="0dp"
             android:textAlignment="center"
+            android:background="@drawable/radiobutton_style"
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:text="都市"
@@ -71,6 +77,7 @@
             android:id="@+id/radioButton_lishi"
             android:layout_width="0dp"
             android:textAlignment="center"
+            android:background="@drawable/radiobutton_style"
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:text="历史"
@@ -81,6 +88,7 @@
             android:id="@+id/radioButton_wangyou"
             android:layout_width="0dp"
             android:textAlignment="center"
+            android:background="@drawable/radiobutton_style"
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:text="网游"
@@ -91,6 +99,7 @@
             android:id="@+id/radioButton_kehuan"
             android:layout_width="0dp"
             android:textAlignment="center"
+            android:background="@drawable/radiobutton_style"
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:text="科幻"
@@ -100,6 +109,7 @@
             android:id="@+id/radioButton_yanqing"
             android:layout_width="0dp"
             android:textAlignment="center"
+            android:background="@drawable/radiobutton_style"
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:text="言情"
@@ -107,7 +117,6 @@
             />
     </RadioGroup>
     <androidx.recyclerview.widget.RecyclerView
-        android:background="#FFEFD5"
         android:id="@+id/shucheng_recycleview"
         android:layout_width="match_parent"
         android:layout_height="match_parent">

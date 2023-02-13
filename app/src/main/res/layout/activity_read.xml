@@ -1,15 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".ReadActivity">
-
+    android:layout_height="match_parent">
 
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/view_page2"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:id="@+id/radiogroup"
+        >
+        <RadioButton
+            android:id="@+id/radioButton_mulu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableBottom="@drawable/mulu"
+            android:button="@null" />
+        <RadioButton
+            android:id="@+id/radioButton_beijing"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableBottom="@drawable/beijing"
+            android:button="@null" />
+        <RadioButton
+            android:id="@+id/radioButton_ziti"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableBottom="@drawable/ziti"
+            android:button="@null" />
+    </RadioGroup>
 
-</LinearLayout>
+</RelativeLayout>

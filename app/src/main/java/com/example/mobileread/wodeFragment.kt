@@ -20,6 +20,8 @@ class wodeFragment : Fragment() {
         cursor.moveToFirst()
         val wode_name=cursor.getString(cursor.getColumnIndexOrThrow("name"))
         val wode_touxiang=cursor.getBlob(cursor.getColumnIndexOrThrow("image"))
+        cursor.close()
+        db.close()
         textView_account.text=wode_account
         textView_name.text=wode_name
         val opts=BitmapFactory.Options()

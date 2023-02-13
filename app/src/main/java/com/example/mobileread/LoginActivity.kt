@@ -25,7 +25,7 @@ class LoginActivity : BaseActivity() {
             val uaccount=account.text.toString()
             val upassword=password.text.toString()
             val cursor = db.rawQuery("select * from User Where account=?", arrayOf(uaccount))
-            if(cursor.count!=0){
+            if(cursor.count!=0 && uaccount.isNotEmpty()){
                 cursor.moveToFirst()
             if (cursor.getString(1)==upassword){
                 cursor.close()

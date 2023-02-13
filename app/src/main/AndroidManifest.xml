@@ -13,6 +13,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MobileRead">
         <activity
+            android:name=".muluActivity"
+            android:exported="false" />
+        <activity
             android:name=".ReadActivity"
             android:exported="false" />
         <activity

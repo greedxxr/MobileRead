@@ -19,8 +19,6 @@ import java.io.Serializable
 class BookActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        val dbHelper = MyDatabaseHelper(this,"DataBase",2)
-        val db = dbHelper.writableDatabase
         setContentView(R.layout.activity_book)
         val book=intent.getSerializableExtra("book")as Book
         var ChapterList= ArrayList<Charpter>()
@@ -43,10 +41,12 @@ class BookActivity : BaseActivity() {
             {intent.putExtra("charpters", ChapterList as Serializable)
                 startActivity(intent)}
             else
-                Toast.makeText(this,"加载中,请稍等",Toast.LENGTH_LONG).show()
+                Toast.makeText(this,"加载中,请稍等",Toast.LENGTH_SHORT).show()
         }
 
         button_jiaru.setOnClickListener {
+            val dbHelper = MyDatabaseHelper(this,"DataBase",2)
+            val db = dbHelper.writableDatabase
             val values = ContentValues().apply {
                 put("book_name",book.name)
                 put("writer",book.writer)
