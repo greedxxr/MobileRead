@@ -46,15 +46,17 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:orientation="horizontal">
-        <Button
+        <android.widget.Button
             android:id="@+id/button_yuedu"
             android:layout_width="wrap_content"
+            android:background="@drawable/button_style"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="阅读" />
-        <Button
+        <android.widget.Button
             android:id="@+id/button_jiaru"
             android:layout_width="wrap_content"
+            android:background="@drawable/button_style"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="加入书架" />

@@ -25,6 +25,7 @@ class ViewPagerAdapter(val CharpterList:ArrayList<Charpter>):
         val charpter=CharpterList[position]
         holder.charptername.text=charpter.Charpter_name
         holder.charpterneirong.text=charpter.Charpter_neirong
+
     }
 
     override fun getItemCount()=CharpterList.size

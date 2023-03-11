@@ -7,7 +7,6 @@
     tools:context=".shujiaFragment">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:background="#FFEFD5"
         android:id="@+id/shujia_recycleview"
         android:layout_width="match_parent"
         android:layout_height="match_parent">

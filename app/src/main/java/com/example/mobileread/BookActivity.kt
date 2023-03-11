@@ -2,14 +2,10 @@ package com.example.mobileread
 
 import android.content.ContentValues
 import android.content.Intent
-import android.net.Uri
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
-import androidx.core.net.toUri
 import com.bumptech.glide.Glide
 import kotlinx.android.synthetic.main.activity_book.*
-import kotlinx.android.synthetic.main.book_item.*
 import okhttp3.Call
 import okhttp3.Callback
 import okhttp3.Response
@@ -45,22 +41,22 @@ class BookActivity : BaseActivity() {
         }
 
         button_jiaru.setOnClickListener {
-            val dbHelper = MyDatabaseHelper(this,"DataBase",2)
+            val dbHelper = MyDatabaseHelper(this, "DataBase", 2)
             val db = dbHelper.writableDatabase
             val values = ContentValues().apply {
-                put("book_name",book.name)
-                put("writer",book.writer)
-                put("introduction",book.introduction)
-                put("img_src",book.image)
-                put("book_src",book.src)
+                put("book_name", book.name)
+                put("writer", book.writer)
+                put("introduction", book.introduction)
+                put("img_src", book.image)
+                put("book_src", book.src)
             }
-            db.insert("Book",null,values)
-            val user=application as User
-                val values2 = ContentValues().apply {
-                    put("account",user.account)
-                    put("book_name",book.name)
-                }
-            db.insert("UwithB",null,values2)
+            db.insert("Book", null, values)
+            val user = application as User
+            val values2 = ContentValues().apply {
+                put("account", user.account)
+                put("book_name", book.name)
+            }
+            db.insert("UwithB", null, values2)
             db.close()
             Toast.makeText(this, "加入书架成功", Toast.LENGTH_SHORT).show()
         }

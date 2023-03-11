@@ -8,11 +8,13 @@
         <entry key="..\:/ProgramFiles/androidfile/MobileRead/app/src/main/res/drawable/ed_sharp.xml" value="0.1703125" />
         <entry key="..\:/ProgramFiles/androidfile/MobileRead/app/src/main/res/drawable/flbutton.xml" value="0.1" />
         <entry key="..\:/ProgramFiles/androidfile/MobileRead/app/src/main/res/drawable/ic_launcher_background.xml" value="0.26564102564102565" />
+        <entry key="..\:/ProgramFiles/androidfile/MobileRead/app/src/main/res/drawable/layer_progress.xml" value="0.18854166666666666" />
         <entry key="..\:/ProgramFiles/androidfile/MobileRead/app/src/main/res/drawable/radiobutton_background_checked.xml" value="0.19270833333333334" />
         <entry key="..\:/ProgramFiles/androidfile/MobileRead/app/src/main/res/drawable/radiobutton_background_unchecked.xml" value="0.19270833333333334" />
         <entry key="..\:/ProgramFiles/androidfile/MobileRead/app/src/main/res/drawable/radiobutton_style.xml" value="0.19270833333333334" />
         <entry key="..\:/ProgramFiles/androidfile/MobileRead/app/src/main/res/drawable/rect_custom_blue.xml" value="0.19270833333333334" />
         <entry key="..\:/ProgramFiles/androidfile/MobileRead/app/src/main/res/drawable/rect_custom_gray.xml" value="0.19270833333333334" />
+        <entry key="..\:/ProgramFiles/androidfile/MobileRead/app/src/main/res/drawable/shape_circle.xml" value="0.18854166666666666" />
         <entry key="..\:/ProgramFiles/androidfile/MobileRead/app/src/main/res/drawable/shucheng_select.xml" value="0.1648148148148148" />
         <entry key="..\:/ProgramFiles/androidfile/MobileRead/app/src/main/res/drawable/shujia_select.xml" value="0.1648148148148148" />
         <entry key="..\:/ProgramFiles/androidfile/MobileRead/app/src/main/res/drawable/wode_select.xml" value="0.1648148148148148" />
@@ -20,9 +22,10 @@
         <entry key="..\:/ProgramFiles/androidfile/MobileRead/app/src/main/res/layout/activity_login.xml" value="0.264" />
         <entry key="..\:/ProgramFiles/androidfile/MobileRead/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/ProgramFiles/androidfile/MobileRead/app/src/main/res/layout/activity_mulu.xml" value="0.22327898550724637" />
-        <entry key="..\:/ProgramFiles/androidfile/MobileRead/app/src/main/res/layout/activity_read.xml" value="0.264" />
+        <entry key="..\:/ProgramFiles/androidfile/MobileRead/app/src/main/res/layout/activity_read.xml" value="0.4" />
         <entry key="..\:/ProgramFiles/androidfile/MobileRead/app/src/main/res/layout/activity_register.xml" value="0.4" />
         <entry key="..\:/ProgramFiles/androidfile/MobileRead/app/src/main/res/layout/book_item.xml" value="0.2" />
+        <entry key="..\:/ProgramFiles/androidfile/MobileRead/app/src/main/res/layout/book_shucheng_item.xml" value="0.15416666666666667" />
         <entry key="..\:/ProgramFiles/androidfile/MobileRead/app/src/main/res/layout/charpter_item.xml" value="0.2" />
         <entry key="..\:/ProgramFiles/androidfile/MobileRead/app/src/main/res/layout/fragment_shucheng.xml" value="0.25894736842105265" />
         <entry key="..\:/ProgramFiles/androidfile/MobileRead/app/src/main/res/layout/fragment_shujia.xml" value="0.2" />

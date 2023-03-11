@@ -15,7 +15,7 @@ import java.io.IOException
 
 class shuchengFragment : Fragment() {
 
-var address="http://www.tlxs.net/"
+var address="https://www.23sk.net/"
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -44,14 +44,14 @@ var address="http://www.tlxs.net/"
           object :RadioGroup.OnCheckedChangeListener{
           override fun onCheckedChanged(p0: RadioGroup?, p1: Int) {
               when(p1){
-                  radioButton_shouye.id->address="http://www.tlxs.net/"
-                  radioButton_xuanhuan.id->address="http://www.tlxs.net/xuanhuan/"
-                  radioButton_xiuzhen.id->address="http://www.tlxs.net/xiuzhen/"
-                  radioButton_dushi.id->address="http://www.tlxs.net/dushi/"
-                  radioButton_lishi.id->address="http://www.tlxs.net/lishi/"
-                  radioButton_wangyou.id->address="http://www.tlxs.net/wangyou/"
-                  radioButton_kehuan.id->address="http://www.tlxs.net/kehuan/"
-                  radioButton_yanqing.id->address="http://www.tlxs.net/yanqing/"
+                  radioButton_shouye.id->address="https://www.23sk.net/"
+                  radioButton_xuanhuan.id->address="https://www.23sk.net/xuanhuan/"
+                  radioButton_xiuzhen.id->address="https://www.23sk.net/xiuzhen/"
+                  radioButton_dushi.id->address="https://www.23sk.net/dushi/"
+                  radioButton_lishi.id->address="https://www.23sk.net/lishi/"
+                  radioButton_wangyou.id->address="https://www.23sk.net/wangyou/"
+                  radioButton_kehuan.id->address="https://www.23sk.net/kehuan/"
+                  radioButton_yanqing.id->address="https://www.23sk.net/yanqing/"
               }
               OkHttpUtils.sendRequestWithOkHttp(address,object :Callback{
                   override fun onFailure(call: Call, e: IOException) {
@@ -68,7 +68,7 @@ var address="http://www.tlxs.net/"
         //搜索
         button_sousuo.setOnClickListener {
             var new_book_name=editText_sousuo.text
-            address="http://www.tlxs.net/s.php?ie=gbk&q="+new_book_name
+            address="https://www.23sk.net/search.php?keyword="+new_book_name
             OkHttpUtils.sendRequestWithOkHttp(address,object :Callback{
                 override fun onFailure(call: Call, e: IOException) {
                 }
@@ -84,7 +84,7 @@ var address="http://www.tlxs.net/"
         activity?.runOnUiThread {
         val layoutManager = LinearLayoutManager(activity)
         shucheng_recycleview.layoutManager=layoutManager
-        val adapter=BookAdapter(response!!,activity)
+        val adapter=BookAdapter(response!!,activity,2)
         shucheng_recycleview.adapter=adapter
         adapter.setItemClick(object :BookAdapter.itemClick{
             override fun onItemClick(view: View, position: Int) {

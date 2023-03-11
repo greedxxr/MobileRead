@@ -2,12 +2,17 @@ package com.example.mobileread
 
 
 import android.content.Intent
+import android.graphics.Color
 import android.os.Bundle
 import android.util.Log
+import android.view.View
+import android.widget.RadioGroup
+import android.widget.SeekBar
 import android.widget.Toast
 import androidx.viewpager2.widget.ViewPager2
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.activity_read.*
+import kotlinx.android.synthetic.main.charpter_item.*
 import okhttp3.Call
 import okhttp3.Callback
 import okhttp3.Response
@@ -22,9 +27,13 @@ class ReadActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_read)
+       //radiogroup_read.visibility= View.GONE
+        lingear_beijing.visibility=View.GONE
+        lingear_ziti.visibility=View.GONE
         CharpterList=intent.getSerializableExtra("charpters")as ArrayList<Charpter>
         pagerAdapter=ViewPagerAdapter(CharpterList)
         view_page2.adapter=pagerAdapter
+
         //加载第0章
         OkHttpUtils.sendRequestWithOkHttp(
             CharpterList[0].Charpter_uri,
@@ -77,11 +86,49 @@ class ReadActivity : BaseActivity() {
             }
         })
 
+
+
         radioButton_mulu.setOnClickListener{
             val intent =Intent(this,muluActivity::class.java)
             intent.putExtra("chp",CharpterList as Serializable)
             startActivityForResult(intent,1)
         }
+
+        radioButton_beijing.setOnClickListener{
+            lingear_beijing.visibility=View.VISIBLE
+            lingear_ziti.visibility=View.GONE
+            lingear_beijing.bringToFront()
+        }
+
+        radiogroup_beijing.setOnCheckedChangeListener(object : RadioGroup.OnCheckedChangeListener{
+            override fun onCheckedChanged(p0: RadioGroup?, p1: Int) {
+                when(p1){
+                    radioButton_white.id->view_page2.setBackgroundColor(Color.parseColor("#FFFFFF"))
+                    radioButton_yellow.id->view_page2.setBackgroundColor(Color.parseColor("#FFEFD5"))
+                    radioButton_green.id->view_page2.setBackgroundColor(Color.parseColor("#90EE90"))
+                }
+                lingear_beijing.visibility=View.GONE
+            }
+        })
+
+        radioButton_ziti.setOnClickListener{
+            lingear_ziti.visibility= View.VISIBLE
+            lingear_beijing.visibility=View.GONE
+            lingear_ziti.bringToFront()
+        }
+
+        seekBar_ziti.setOnSeekBarChangeListener(object: SeekBar.OnSeekBarChangeListener{
+            override fun onProgressChanged(p0: SeekBar?, p1: Int, p2: Boolean) {
+                  textView_zitidx.text="字体大小"+"$p1"+"dp"
+                  textView_neirong.textSize= p1.toFloat()
+            }
+            override fun onStartTrackingTouch(p0: SeekBar?) {
+
+            }
+            override fun onStopTrackingTouch(p0: SeekBar?) {
+                lingear_ziti.visibility= View.GONE
+            }
+        })
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
