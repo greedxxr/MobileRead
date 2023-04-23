@@ -39,7 +39,7 @@ class LoginActivity : BaseActivity() {
             }
             else{
                 cursor.close()
-                Toast.makeText(this,"密码或错误",Toast.LENGTH_LONG).show()
+                Toast.makeText(this,"密码错误",Toast.LENGTH_LONG).show()
                 account.text.clear()
                 password.text.clear() }
             }

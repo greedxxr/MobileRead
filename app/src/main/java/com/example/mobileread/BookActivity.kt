@@ -3,6 +3,7 @@ package com.example.mobileread
 import android.content.ContentValues
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.widget.Toast
 import com.bumptech.glide.Glide
 import kotlinx.android.synthetic.main.activity_book.*
@@ -34,7 +35,9 @@ class BookActivity : BaseActivity() {
         button_yuedu.setOnClickListener {
             val intent =Intent(this,ReadActivity::class.java)
             if(ChapterList.isNotEmpty())
-            {intent.putExtra("charpters", ChapterList as Serializable)
+            {
+                Sent_CharpterList.CharpterList=ChapterList
+              //  intent.putExtra("charpters", ChapterList as Serializable)
                 startActivity(intent)}
             else
                 Toast.makeText(this,"加载中,请稍等",Toast.LENGTH_SHORT).show()

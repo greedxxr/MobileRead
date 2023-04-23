@@ -37,6 +37,7 @@ class RegisterActivity : BaseActivity() {
             val bmp=imageView_touxiang.drawable.toBitmap()
             val stream = ByteArrayOutputStream()
             bmp.compress(Bitmap.CompressFormat.JPEG,100,stream)
+            if(account.isNotEmpty() and password.isNotEmpty() and name.isNotEmpty() and password_repeat.isNotEmpty()){
             if (password.equals(password_repeat)) {
                 val values = ContentValues().apply {
                     put("account",account)
@@ -54,7 +55,12 @@ class RegisterActivity : BaseActivity() {
                 Toast.makeText(this, "密码和确认密码不一致，注册失败", Toast.LENGTH_SHORT).show()
                 }
             finish()
+
             }
+            else{
+                Toast.makeText(this,"不能为空",Toast.LENGTH_SHORT).show()
+            }
+        }
         }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {

@@ -30,7 +30,7 @@ class ReadActivity : BaseActivity() {
        //radiogroup_read.visibility= View.GONE
         lingear_beijing.visibility=View.GONE
         lingear_ziti.visibility=View.GONE
-        CharpterList=intent.getSerializableExtra("charpters")as ArrayList<Charpter>
+        CharpterList=Sent_CharpterList.CharpterList
         pagerAdapter=ViewPagerAdapter(CharpterList)
         view_page2.adapter=pagerAdapter
 
@@ -90,7 +90,6 @@ class ReadActivity : BaseActivity() {
 
         radioButton_mulu.setOnClickListener{
             val intent =Intent(this,muluActivity::class.java)
-            intent.putExtra("chp",CharpterList as Serializable)
             startActivityForResult(intent,1)
         }
 
